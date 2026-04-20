@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Top Transportation — Driver Resources</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      color: #1a1a1a;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 40px 32px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      display: block;
+      margin: 0 auto 16px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #6b7280;
+      font-size: 0.95rem;
+      margin-bottom: 32px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 20px;
+      background: #ffffff;
+      border: 2px solid #e5e7eb;
+      border-radius: 14px;
+      text-decoration: none;
+      color: #1a1a1a;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .link-card:hover {
+      border-color: #1a1a1a;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .link-card:active {
+      transform: translateY(0);
+    }
+
+    .icon {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      border-radius: 10px;
+      background: #f3f4f6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+    }
+
+    .link-text {
+      flex: 1;
+    }
+
+    .link-title {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+
+    .link-desc {
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+
+    .arrow {
+      color: #9ca3af;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
+      color: #9ca3af;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 32px 24px;
+      }
+      h1 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <img src="logo.png" alt="Tip Top Transportation" class="logo">
+    <h1>Driver Resources</h1>
+    <p class="subtitle">Quick access to important links</p>
+
+    <div class="links">
+      <a href="https://www.hcpss.org/f/news/calendars/calendar-202526.pdf?b" class="link-card" target="_blank" rel="noopener">
+        <div class="icon">📅</div>
+        <div class="link-text">
+          <div class="link-title">School Calendar</div>
+          <div class="link-desc">HCPSS 2025–26 calendar</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0F07yx-QDrRs9PSyQwTefDzAINgj2GqSE1onaUnU0-ko2Qw/viewform?usp=header" class="link-card" target="_blank" rel="noopener">
+        <div class="icon">🔧</div>
+        <div class="link-text">
+          <div class="link-title">Bus Repair Form</div>
+          <div class="link-desc">Report a maintenance issue</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJT9jj7H5mU8AK8NMgLnpnT-jIXSxjOStLzRsXbYS_Glu4sw/viewform" class="link-card" target="_blank" rel="noopener">
+        <div class="icon">📋</div>
+        <div class="link-text">
+          <div class="link-title">Student Behavior Form</div>
+          <div class="link-desc">Submit a behavior report</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+    </div>
+
+    <footer>
+      Tip Top Transportation
+    </footer>
+  </main>
+</body>
+</html>
